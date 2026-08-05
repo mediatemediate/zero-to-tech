@@ -1,0 +1,9 @@
+conda config --set auto_activate false
+python -m venv --prompt=zero-to-tech .venv
+.\.venv\Scripts\Activate.ps1
+deactivate
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+source .venv/bin/activate
